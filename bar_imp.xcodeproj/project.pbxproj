@@ -14,6 +14,7 @@
 		D98F4ACD2AE67BB80006CD67 /* bar_impTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4ACC2AE67BB80006CD67 /* bar_impTests.swift */; };
 		D98F4AD72AE67BB80006CD67 /* bar_impUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AD62AE67BB80006CD67 /* bar_impUITests.swift */; };
 		D98F4AD92AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AD82AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift */; };
+		D98F4AE62AE67BEB0006CD67 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		D98F4AD22AE67BB80006CD67 /* bar_impUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bar_impUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98F4AD62AE67BB80006CD67 /* bar_impUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_impUITests.swift; sourceTree = "<group>"; };
 		D98F4AD82AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_impUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D98F4AE72AE67CDA0006CD67 /* bar-imp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "bar-imp-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,10 @@
 		D98F4ABA2AE67BB70006CD67 /* bar_imp */ = {
 			isa = PBXGroup;
 			children = (
+				D98F4AE72AE67CDA0006CD67 /* bar-imp-Info.plist */,
 				D98F4ABB2AE67BB70006CD67 /* bar_impApp.swift */,
 				D98F4ABD2AE67BB70006CD67 /* ContentView.swift */,
+				D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */,
 				D98F4ABF2AE67BB80006CD67 /* Assets.xcassets */,
 				D98F4AC12AE67BB80006CD67 /* Preview Content */,
 			);
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98F4ABE2AE67BB70006CD67 /* ContentView.swift in Sources */,
+				D98F4AE62AE67BEB0006CD67 /* ViewModel.swift in Sources */,
 				D98F4ABC2AE67BB70006CD67 /* bar_impApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +431,7 @@
 				DEVELOPMENT_TEAM = 8KQDNNV2H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bar-imp-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +461,7 @@
 				DEVELOPMENT_TEAM = 8KQDNNV2H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bar-imp-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

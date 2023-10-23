@@ -1,24 +1,22 @@
-//
-//  ContentView.swift
-//  bar_imp
-//
-//  Created by Shinjan Patra on 23/10/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Call API") {
+                viewModel.callAPI()
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.setupTimer()
+        }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

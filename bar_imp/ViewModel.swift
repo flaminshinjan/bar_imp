@@ -1,27 +1,7 @@
-//
-//  ViewModel.swift
-//  bar_imp
-//
-//  Created by Shinjan Patra on 23/10/23.
-//
-
 import Foundation
-import UIKit
 
 class ViewModel: ObservableObject {
     private var timer: Timer?
-    
-    init() {
-        NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
-            // Invalidate or pause the timer when the app goes to the background
-            self?.timer?.invalidate()
-        }
-
-        NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { [weak self] _ in
-            // Re-setup the timer when the app comes back to the foreground
-            self?.setupTimer()
-        }
-    }
 
     func callAPI() {
         // URL of the endpoint
@@ -44,20 +24,19 @@ class ViewModel: ObservableObject {
                 print("Unexpected error")
             }
         }
-        
+
         // Start the task
         task.resume()
     }
-    
+
     func setupTimer() {
         timer?.invalidate() // Invalidate the current timer if it's already running
         timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { [weak self] _ in
             self?.callAPI()
         }
     }
-    
+
     deinit {
         timer?.invalidate()
     }
 }
-

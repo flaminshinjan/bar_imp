@@ -15,6 +15,7 @@
 		D98F4AD72AE67BB80006CD67 /* bar_impUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AD62AE67BB80006CD67 /* bar_impUITests.swift */; };
 		D98F4AD92AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AD82AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift */; };
 		D98F4AE62AE67BEB0006CD67 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */; };
+		D98F4AE92AE680C80006CD67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4AE82AE680C80006CD67 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D98F4AD82AE67BB80006CD67 /* bar_impUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_impUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D98F4AE72AE67CDA0006CD67 /* bar-imp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "bar-imp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D98F4AE82AE680C80006CD67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D98F4AE52AE67BEB0006CD67 /* ViewModel.swift */,
 				D98F4ABF2AE67BB80006CD67 /* Assets.xcassets */,
 				D98F4AC12AE67BB80006CD67 /* Preview Content */,
+				D98F4AE82AE680C80006CD67 /* AppDelegate.swift */,
 			);
 			path = bar_imp;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98F4AE92AE680C80006CD67 /* AppDelegate.swift in Sources */,
 				D98F4ABE2AE67BB70006CD67 /* ContentView.swift in Sources */,
 				D98F4AE62AE67BEB0006CD67 /* ViewModel.swift in Sources */,
 				D98F4ABC2AE67BB70006CD67 /* bar_impApp.swift in Sources */,
